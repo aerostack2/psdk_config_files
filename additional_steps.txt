@@ -1,0 +1,8 @@
+sudo modprobe configfs
+sudo modprobe libcomposite
+sudo modprobe usb_f_fs
+sudo modprobe tegra-xudc
+
+echo device | sudo tee /sys/class/usb_role/usb2-0-role-switch/role
+
+sudo ifconfig usb0 192.168.1.1 netmask 255.255.255.0 up
