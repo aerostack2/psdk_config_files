@@ -1,4 +1,4 @@
-Steps to configure any Xavier/Orin NX/AGX board to connect to PSDK.
+Steps to configure any Xavier/Orin NX/AGX board to connect to PSDK. (THIS IS ONLY DONE ONCE)
 
 - Disable l4t-device-mode auto start (This is only performed once): ``` sudo systemctl disable nv-l4t-usb-device-mode.service ```
 
@@ -22,7 +22,7 @@ and
 - If it works, re-enable the service:
 ```sudo systemctl enable /opt/nvidia/l4t-usb-device-mode/nv-l4t-usb-device-mode.service```
 
-Now the bulk mode and the network mode should be properly configured (yes, both). So what you want to do now differs depending on wheter you are working on M300, or M350/M30. So.
+Now the bulk mode and the network mode should be properly configured (yes, both). So what you want to do now differs depending on wheter you are working on M300, or M350/M30. (THIS MUST BE DONE EVERYTIME THE BOARD BOOTS UP)
 
 - M300:
     - Hardware:
