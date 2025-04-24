@@ -45,7 +45,7 @@ Now the bulk mode and the network mode should be properly configured (yes, both)
         ![Agx connections](images/agx_connections.jpg)
     - Software:
         - Enable device mode on onboard computer:
-        ```echo host | sudo tee /sys/class/usb_role/usb2-0-role-switch/role```  
+        ```echo device | sudo tee /sys/class/usb_role/usb2-0-role-switch/role```  
         - Lift up l4tbr0 connection:
         ```sudo ifconfig usb0 192.168.1.1 netmask 255.255.255.0 up```
         Now you should see with ```ifconfig``` command "l4tbr0" entry. If not, repeat steps above. 
@@ -58,7 +58,7 @@ Now the bulk mode and the network mode should be properly configured (yes, both)
         ![Nx connections](images/nx_connections.jpg)
     - Software:
         - Enable device mode on onboard computer:
-        ```echo host | sudo tee /sys/class/usb_role/usb2-0-role-switch/role```  
+        ```echo device | sudo tee /sys/class/usb_role/usb2-0-role-switch/role```  
         - Lift up l4tbr0 connection:
         ```sudo ifconfig usb0 192.168.1.1 netmask 255.255.255.0 up```
         Now you should see with ```ifconfig``` command "l4tbr0" entry. If not, repeat steps above.
